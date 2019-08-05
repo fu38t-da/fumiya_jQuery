@@ -47,9 +47,21 @@ $(function(){
     return false;
   });
 
-  }
+  $('.btn').on('click', function(){
+    $('.modal-content').fadeIn('slow');
+    $('#modal-bg').fadeIn('slow');
+  })
+
+  $('.js-modal-close').on('click', function(){
+    $('.modal-content').fadeOut('slow');
+    $('#modal-bg').fadeOut('slow');
+  })
+
+  
 
 });
+
+
 
 // jQueryは配列として情報を取得している
 // （console.logで調べるとわかる）
